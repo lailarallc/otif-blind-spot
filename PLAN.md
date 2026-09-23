@@ -114,3 +114,9 @@ deferred to a polish phase.
 - **Verified:** tsc clean, 63 frontend + 29 python tests pass, build clean, security clean. Windowing consistency + Move 4 relabel confirmed live across 52w/13w presets.
 - **Deferred:** ~~lailara-frame `.ll-measure` prose-measure adoption~~ — **done 2026-07-30** (`8a87996`, deployed; verified via computed geometry). JSON runtime validation in data.ts — intentionally skipped; the new parity test is a stronger build-time guard.
 - **Next review:** 2026-08-27 (active project, ~4-week cadence)
+
+### 2026-09-23 — Audit (health check only)
+- **Findings:** 1 critical, 6 important, 4 nice-to-have
+- **Top concerns:** Client mode silently scores any unrecognized pass/fail value (e.g. "Met", "Hit", blank) as a failure, so a client's OTIF and gap can be wrong with no warning (client_mode.py _to_bool; _FALSE set is unused). The pipeline's shipment query has no date filter, so ~300 Jan-2026 shipments sit inside the "Jan 2023–Dec 2025" full-corpus figures, and zero/missing receipts fall back to units shipped. README still says the hero defaults to 52 weeks (code default is full corpus), and HANDOFF/PLAN have not been updated since 2026-07-30 despite ~15 commits.
+- **Action taken:** Audit only — no fixes this session
+- **Next review:** 2026-10-21
