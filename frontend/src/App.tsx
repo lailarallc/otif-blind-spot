@@ -54,7 +54,7 @@ function HeadlineHook({ summary, exposure }: { summary: Summary; exposure: Expos
         </div>
 
         <p className="headline-hook__gap ll-measure-narrow" id="headline-title">
-          {formatPts(summary.gap_pts)} gap. Same shipments. Different docks. Different baselines.
+          {formatPts(summary.gap_pts)} gap. Different docks. Different questions. Different baselines.
         </p>
         <p className="headline-hook__gap headline-hook__gap--exposure ll-measure-narrow">
           ${Math.round(exposure.total_exposure / 1000)}K a year in exposure — $

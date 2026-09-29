@@ -40,7 +40,7 @@ The tool distinguishes two cost types:
 
 ## Why it matters
 
-Brands manage to the metric they can see — internal fill rate — while retailers fine and delist against the metric they score — OTIF. A brand can believe it is a 99% performer, and even pass Walmart's OTIF scorecard, while one Walmart shipment in six still arrives late or short. The fines are the visible cost; the compounding cost is shelf-velocity damage and the deauthorization conversation that follows a bad scorecard. Making the gap visible, attributable, and priced turns a pile of chargebacks into a fixable operations list, ranked by dollar impact.
+Retailers deduct for every case that arrives late or short, whatever the brand's fill rate says. A brand can believe it is a 99% performer, and even pass Walmart's OTIF scorecard, while one Walmart shipment in six still arrives late or short. The fines are the visible cost; the compounding cost is shelf-velocity damage and the deauthorization conversation that follows a bad scorecard. Making the gap visible, attributable, and priced turns a pile of chargebacks into a fixable operations list, ranked by dollar impact.
 
 ## Run
 
