@@ -1,6 +1,6 @@
 # Portfolio Project Brief: OTIF Blind Spot
 
-**Working title:** *"You Think Your Fill Rate Is 99%. Walmart Says It's 84%."*
+**Working title:** *"Your Fill Rate Says 99%. One in Six Walmart Shipments Still Misses."*
 
 **Repo (recommended):** `otif-blind-spot`
 
@@ -12,7 +12,7 @@
 
 ### 1. The Pain
 
-A specialty food brand's internal dashboard says it ships 99% of orders complete. The brand feels good about that number. Then a Walmart OTIF fine arrives, and the supplier scorecard says the brand's On-Time In-Full performance is 84%. The CEO is confused: how can we be at 99% and 84% at the same time?
+A specialty food brand's internal dashboard says it ships 99% of orders complete. The brand feels good about that number. Then the chargebacks arrive, and receiving data shows only 84% of the brand's Walmart shipments arrived on time and complete. The CEO is confused: how can we be at 99% and 84% at the same time?
 
 The answer is that they're two different numbers measured at two different docks, and the brand has only ever looked at one of them.
 
@@ -42,7 +42,7 @@ The brand watches its internal fill rate (measured at its own dock) and feels fi
 
 ### 2. Why This Piece
 
-**It reveals the gap nobody measures.** The "you think 99%, they say 84%" reframe is the hook — it exposes a blind spot the brand didn't know it had: a double-digit scorecard gap on the exact metric retailers use to decide who keeps shelf. The direct fines are modest; the deauthorization risk the gap signals is the existential cost. That's the kind of "stop and rethink your business" moment a portfolio piece needs.
+**It reveals the gap nobody measures.** The "99% fill, one in six shipments late or short" reframe is the hook — it exposes a blind spot the brand didn't know it had, even while its OTIF scorecard passes. The direct fines are modest; the deauthorization risk the gap signals is the existential cost. That's the kind of "stop and rethink your business" moment a portfolio piece needs.
 
 **It completes the short-ship workstream.** The practice has built around the short-ship doom loop. This is the missing measurement piece:
 - **OTIF Blind Spot** *reveals* how bad fill performance actually is and where the failures come from (diagnosis).
@@ -63,7 +63,7 @@ Three pieces, one loop, three angles. This one is the diagnostic that tells you 
 The heart of the piece: reconciling the two numbers and decomposing the gap.
 
 **Move 1 — Reconcile the two docks (the Dual-Dock framework).**
-Pull the retailer's OTIF scorecard (from the supplier portal) and reconcile it against the brand's own internal fulfillment logs. The Fulfillment Dock (brand internal, measured against acknowledged 855s) vs. the Consignee Dock (retailer receiving, measured against original 850s). Surface the headline gap: internal fill rate vs. retailer-measured OTIF. This single comparison — "you think 99%, they score you at 84%" — is the reveal. Most brands have never put the two numbers side by side.
+Pull the retailer's OTIF scorecard (from the supplier portal) and reconcile it against the brand's own internal fulfillment logs. The Fulfillment Dock (brand internal, measured against acknowledged 855s) vs. the Consignee Dock (retailer receiving, measured against original 850s). Surface the headline gap: internal fill rate vs. retailer-measured OTIF. This single comparison — "99% fill, but only 84% of shipments arrive complete and on time" — is the reveal. Most brands have never put the two numbers side by side.
 
 **Move 2 — Decompose the gap into on-time vs. in-full.**
 Split the OTIF shortfall into its two components. How much of the gap is "on-time" failures (late deliveries, missed must-arrive-by-dates, missed appointment windows)? How much is "in-full" failures (shipped short, partial receipts)? This is the move that tells the brand whether its problem is logistics or production — the single most actionable output.
@@ -86,17 +86,17 @@ Together they show the brand, for the first time, how bad its fill performance a
 
 #### The Margin Math
 
-For the Cinderhaven worked example — a ~15-point gap between internal fill rate (99.2%) and Walmart-scored OTIF (84.5%):
+For the Cinderhaven worked example — a ~15-point gap between internal fill rate (99.2%) and Walmart shipments on time and complete (84.5%):
 
 | Failure Category | Impact | Annual Measured Exposure | Corrective Action |
 |------------------|--------|:------------------:|-------------------|
-| On-time logistics lag | ~2-point score drop | part of ~$24K in fines | Optimize carrier routing, adjust ship leads |
-| In-full product shortages | ~13-point score drop | part of ~$24K in fines | Production forecast guardrails (→ Production Demand Forecast) |
+| On-time logistics lag | ~2 points of the gap | part of ~$24K in chargebacks | Optimize carrier routing, adjust ship leads |
+| In-full product shortages | ~13 points of the gap | part of ~$24K in chargebacks | Production forecast guardrails (→ Production Demand Forecast) |
 | Shelf-velocity damage (modeled) | empty shelves | ~$34K | Recover lost distribution, protect shelf position |
 | **Total measured exposure** | **~15-point gap** | **~$57K** | **Turn ops metrics into retained profit** |
 
-- **The measured dollars are modest; the gap is not.** The direct exposure (~$24K fines + ~$34K modeled velocity damage ≈ $57K/year) is real but small. The story isn't the fine total — it's a 15-point scorecard gap the brand never knew it had.
-- **The un-priced cost is the dangerous one.** Category-standing risk — deauthorization at the next review for a chronic OTIF offender — is unquantifiable but existential, and dwarfs the measured $57K when it lands.
+- **The measured dollars are modest; the gap is not.** The direct exposure (~$24K fines + ~$34K modeled velocity damage ≈ $57K/year) is real but small. The story isn't the chargeback total — it's a 15-point gap in complete shipments the brand never knew it had.
+- **The un-priced cost is the dangerous one.** Buyer confidence erodes when shipments keep arriving short, even while the OTIF scorecard passes. That cost is unquantified here and can dwarf the measured $57K.
 - **Misdirected remediation is pure waste.** Brands fixing the wrong failure mode (logistics when it's production, or vice versa) burn the remediation budget entirely. The decomposition redirects it to the actual problem.
 
 **Total measured exposure: ~$57K/year** at the worked-example brand (~$24K fines + ~$34K modeled velocity) — plus the un-priced, and far larger when it lands, risk of deauthorization at category review.
@@ -105,7 +105,7 @@ For the Cinderhaven worked example — a ~15-point gap between internal fill rat
 
 - **Before:** Internal dashboard says 99% fill. The team feels fine. OTIF fines arrive and get absorbed. The ops lead throws resources at logistics. Fines continue, because almost the entire gap was production short-ships nobody decomposed. The brand trusts the wrong number and fixes the wrong thing.
 
-- **After:** The reconciliation shows the real Walmart OTIF is 84.5%. The decomposition shows ~13 of the ~15 points are in-full production short-ships, not logistics. The brand redirects effort to production, closes the in-full gap, and watches the fines, the velocity damage, and — most importantly — the deauthorization risk fall. The CFO stops seeing OTIF as a compliance footnote and starts seeing it as a shelf-retention metric.
+- **After:** The reconciliation shows only 84.5% of Walmart shipments arrive on time and complete. The decomposition shows ~13 of the ~15 points are in-full production short-ships, not logistics. The brand redirects effort to production, closes the in-full gap, and watches the fines, the velocity damage, and — most importantly — the deauthorization risk fall. The CFO stops seeing OTIF as a compliance footnote and starts seeing it as a shelf-retention metric.
 
 #### Who Else Sees This?
 
@@ -142,7 +142,7 @@ The piece reconciles two sources the brand already has but never joins: the reta
   4. True fill rate against original demand (the order-trimming blind spot exposed)
   5. Dual exposure quantified — fines plus velocity damage
   6. A remediation priority that points at the *actual* failure mode, not the assumed one
-- **Why this piece sells it:** The reframe — "you think 99%, they score you at 84%" — is a claim the brand can immediately test against their own scorecard, and it's almost always true. Once they see the gap, they want the decomposition that tells them what to fix. The dual-exposure number (fines + velocity) justifies the fee several times over.
+- **Why this piece sells it:** The reframe — "99% fill, one in six shipments late or short" — is a claim the brand can immediately test against its own receiving and deduction data. Once they see the gap, they want the decomposition that tells them what to fix. The dual-exposure number (fines + velocity) justifies the fee several times over.
 
 #### Client Lift
 
@@ -170,22 +170,22 @@ The piece reconciles two sources the brand already has but never joins: the reta
 
 ### 8. Cinderhaven Integration
 
-Cinderhaven's internal dashboards show a 99.2% fill rate. Walmart's supplier scorecard shows 84.5% OTIF. The reconciliation reveals:
+Cinderhaven's internal dashboards show a 99.2% fill rate. Receiving data shows only 84.5% of its Walmart shipments arrived on time and complete. The reconciliation reveals:
 
 - **The 14.8-point gap is overwhelmingly in-full:** ~2 points are on-time failures (the carrier missing must-arrive-by-date appointment windows) and ~13 points are in-full failures (production short-ships).
 - **The brand had been fixing logistics** — but almost the entire problem was production. The remediation effort was aimed at the wrong failure mode.
 - **True fill against original demand is lower still:** Cinderhaven trims order lines it can't fill before acknowledging, so its high internal number is measured against a reduced base. Against the original POs, true fill is lower.
 - **Exposure:** ~$23.7K/year in measured OTIF fines, plus ~$33.5K/year in modeled velocity damage from the empty-shelf periods the in-full failures created — **~$57K/year total**.
 
-Headline: **Cinderhaven thought it was at 99% and fixing the right problem. It was at 84.5% retailer-scored, fixing the wrong one, and the OTIF blind spot was a ~$57K/year problem hiding behind a number measured at the wrong dock.**
+Headline: **Cinderhaven thought it was at 99%. One in six of its Walmart shipments arrived late or short, and that gap was a ~$57K/year problem hiding behind a number measured at the wrong dock.**
 
-Runs on the existing Cinderhaven Data Platform — joins the shipment, EDI, and PO marts, plus a synthetic Walmart OTIF scorecard layer. Consistent with the short-ship figures in The 150 Cases and the OOS events in Production Demand Forecast and Competitive Shelf Intelligence.
+Runs on the existing Cinderhaven Data Platform — joins the shipment, EDI, PO and receipt marts. Consistent with the short-ship figures in The 150 Cases and the OOS events in Production Demand Forecast and Competitive Shelf Intelligence.
 
 ---
 
 ### 9. Tactical Notes
 
-- **Lead with the two numbers.** "You think 99%, they score you at 84%" is the entire hook. Open with it. The gap is the blind spot; everything else is explaining and pricing it.
+- **Lead with the two numbers.** "99% fill, one in six Walmart shipments late or short" is the entire hook. Open with it. The gap is the blind spot; everything else is explaining and pricing it.
 - **The on-time/in-full decomposition is the most actionable output — make it prominent.** Telling a brand "your OTIF is bad" is useless. Telling them "~13 of your ~15 points are production short-ships, not logistics" redirects their entire remediation effort. That split is the deliverable that earns the fee.
 - **Connect to velocity damage, not just fines.** The fines are real but often the smaller number. The empty-shelf velocity damage from the in-full failures is larger and invisible. Pricing both is what moves OTIF from an ops chore to a CFO priority — and ties this piece to the doom-loop theme running through the portfolio.
 - **The order-trimming blind spot is the subtle, credible finding.** Brands inflate their fill rate by trimming order lines they can't fill before acknowledging — so their internal number is measured against a base they've already shrunk. Surfacing "your true fill against the original PO is lower than your reported fill" is the kind of precise, slightly uncomfortable insight that signals the analysis is real.

@@ -27,7 +27,7 @@ function DualDockChart({ summary }: { summary: Summary }) {
   // #158f75 = --color-hk-35, #cc100a = --color-red.
   const data = [
     { label: 'Cinderhaven internal fill', value: summary.internal_fill_rate, color: '#158f75' },
-    { label: "Walmart's OTIF score",      value: summary.retailer_otif,       color: '#cc100a' },
+    { label: "Walmart shipments on time & complete", value: summary.retailer_otif,       color: '#cc100a' },
   ]
 
   const renderChart = useCallback(
@@ -243,11 +243,11 @@ export function ReconciliationView({ summary, rootCauses, trueFill, exposure, ex
       <section className="recon-section" aria-labelledby="move1-title">
         <h2 className="recon-section__title" id="move1-title">Dual-Dock Reconciliation</h2>
         <p className="recon-section__framing ll-measure">
-          Cinderhaven measures fill rate at the shipping dock. Walmart measures OTIF at their receiving dock.
+          Cinderhaven measures fill rate at the shipping dock. This bar counts Walmart shipments that arrived on time and complete at the receiving dock.
           The {formatPts(summary.gap_pts)} gap is real — but invisible to systems that only watch one dock.
         </p>
         <DualDockChart summary={summary} />
-        <p className="recon-footnote ll-measure">Source: Cinderhaven fct_retailer_shipments; synthetic Walmart OTIF scorecard. Window: {summary.window_start} – {summary.window_end}.</p>
+        <p className="recon-footnote ll-measure">Source: Cinderhaven fct_retailer_shipments, shipment lines and receipt lines. Window: {summary.window_start} – {summary.window_end}.</p>
       </section>
 
       {/* Move 2 */}
@@ -285,7 +285,7 @@ export function ReconciliationView({ summary, rootCauses, trueFill, exposure, ex
         <h2 className="recon-section__title" id="move5-title">Financial Exposure</h2>
         <p className="recon-section__framing ll-measure">
           The fines are small and measured ({formatDollars(exposure.annual_fines)}/yr); the velocity damage ({formatDollars(exposure.annual_velocity_damage)}/yr) is modeled, not measured.
-          Neither is the real cost — that's the deauthorization risk a {formatPts(summary.gap_pts)} scorecard gap invites, and it isn't priced here.
+          Neither is the full cost — that's the buyer confidence a {formatPts(summary.gap_pts)} gap in complete shipments wears down, and it isn't priced here.
         </p>
         <ExposureSection exposure={exposure} />
         <p className="recon-footnote ll-measure">{exposureScope}</p>

@@ -2,9 +2,9 @@
 
 ## What this project is
 
-A Lailara portfolio diagnostic piece for specialty food brands ($3M–$20M revenue) that reconciles the brand's internal fill rate against retailer OTIF scorecards and exposes the blind spot between them. The brand thinks it ships at 99%; Walmart scores it at 84.5%. This analysis decomposes the 14.8-point gap into on-time vs. in-full failures, attributes root causes to warehouse-late vs. carrier-late vs. short-ship vs. receiving-discrepancy, and quantifies the full exposure — OTIF fines plus the shelf-velocity damage the empty shelves created. Built on the Cinderhaven Data Platform using synthetic Walmart OTIF scorecard data. Part of the short-ship workstream alongside The 150 Cases (cost) and Production Demand Forecast (prevention).
+A Lailara portfolio diagnostic piece for specialty food brands ($3M–$20M revenue) that reconciles the brand's internal fill rate against retailer OTIF scorecards and exposes the blind spot between them. The brand thinks it ships at 99%; only 84.5% of its Walmart shipments arrive on time and complete. (Walmart's own case-level OTIF passes: 95.6% on-time, 97.9% in-full, 2025.) This analysis decomposes the 14.8-point gap into on-time vs. in-full failures, attributes root causes to warehouse-late vs. carrier-late vs. short-ship vs. receiving-discrepancy, and quantifies the full exposure — OTIF fines plus the shelf-velocity damage the empty shelves created. Built on the Cinderhaven Data Platform using synthetic Walmart OTIF scorecard data. Part of the short-ship workstream alongside The 150 Cases (cost) and Production Demand Forecast (prevention).
 
-**Business question this project answers:** Why does Cinderhaven's internal 99% fill rate diverge from Walmart's 84.5% OTIF score, what failure modes drive the gap, and what is the total financial exposure including fines and velocity damage?
+**Business question this project answers:** Why does Cinderhaven's 99% internal fill rate coexist with only 84.5% of Walmart shipments arriving on time and complete, what failure modes drive the gap, and what does it cost in chargebacks and velocity damage?
 
 ## Tier
 
@@ -14,7 +14,7 @@ Medium — standard workflow: `/clarify`, `/ce:brainstorm`, `/ce:plan`, `/ce:wor
 
 - Primary language: TypeScript/React (frontend) + Python (data pipeline)
 - Key packages/libraries: React 19, Vite, Observable Plot, Vitest (frontend); psycopg2 (pipeline)
-- Platform: Cinderhaven Data Platform (shipment, EDI, PO marts + synthetic Walmart OTIF scorecard layer)
+- Platform: Cinderhaven Data Platform (shipment, EDI, PO and receipt marts)
 - Entry point: `frontend/src/main.tsx` (app); `scripts/run_pipeline.py` (data regen)
 - Other tools: Wrangler (Cloudflare Workers deploy), pre-commit + gitleaks (secret scanning)
 

@@ -1,0 +1,7 @@
+# Legitimate uses of otherwise-retired tokens.
+#   path/glob   -> skip file    |    TOKEN @ path/glob -> skip token in file
+# The 2026-05 requirements brainstorm is the pre-rebuild design record; its
+# "retailer-scored OTIF" describes the retired synthetic scorecard, not a current
+# claim (relabelled 2026-09-29: 84% is the share of Walmart shipments on time and
+# complete, not Walmart's OTIF score).
+retailer-scored OTIF @ docs/brainstorms/otif-blind-spot-requirements.md

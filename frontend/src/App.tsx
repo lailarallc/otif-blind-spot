@@ -47,7 +47,7 @@ function HeadlineHook({ summary, exposure }: { summary: Summary; exposure: Expos
           <div className="headline-hook__number-block">
             <span className="headline-hook__pct headline-hook__pct--low">{formatPercent(summary.retailer_otif)}</span>
             <span className="headline-hook__label">
-              Walmart's OTIF score<br />
+              Walmart shipments on time and complete<br />
               <span className="headline-hook__sublabel">measured at their receiving dock</span>
             </span>
           </div>

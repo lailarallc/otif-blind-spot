@@ -41,8 +41,8 @@ def test_demo_data_sha256_prefix(name):
 
 def test_canonical_headline_gap():
     s = json.loads((DATA / "summary.json").read_text())
-    # The core story: internal 99% (fill at the shipping dock) vs Walmart 84%
-    # (OTIF at their dock), a 14.8-point gap computed from the raw rates.
+    # The core story: internal 99% (fill at the shipping dock) vs 84% (share of
+    # Walmart shipments on time and complete), a 14.8-point gap computed from the raw rates.
     assert s["internal_fill_rate"] == 0.9923
     assert s["retailer_otif"] == 0.8445
     assert s["gap_pts"] == 14.78

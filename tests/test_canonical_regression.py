@@ -9,7 +9,7 @@ Source data:
     - Fill rates derived from data, not target-locked
 
 SCOPE NOTE: Summary uses portfolio fill rate (all retailers) for the
-internal metric, and Walmart-scored OTIF for the retailer metric. The
+internal metric, and the share of Walmart shipments on time and complete for the retailer metric. The
 audit sheet and root-cause decomposition are Walmart-specific.
 """
 

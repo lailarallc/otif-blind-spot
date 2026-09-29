@@ -431,7 +431,7 @@ def main():
     print("SUMMARY", flush=True)
     print(f"{'='*72}", flush=True)
     print(f"  Internal fill rate (portfolio): {summary['internal_fill_rate']:.1%}", flush=True)
-    print(f"  Walmart OTIF (retailer-scored):  {summary['retailer_otif']:.1%}", flush=True)
+    print(f"  Walmart shipments on time & complete:  {summary['retailer_otif']:.1%}", flush=True)
     print(f"  Gap:                             {summary['gap_pts']:.1f} pts", flush=True)
     print(f"    On-time contribution:          {summary['ontime_gap_pts']:.1f} pts", flush=True)
     print(f"    In-full contribution:          {summary['infull_gap_pts']:.1f} pts", flush=True)

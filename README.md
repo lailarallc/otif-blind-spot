@@ -1,6 +1,6 @@
 # OTIF Blind Spot — Cinderhaven Provisions
 
-Your fill rate says 99%. Walmart scores you at 84%. This tool shows where the 14.8-point gap comes from and what it costs.
+Your fill rate says 99%. Only 84% of your Walmart shipments arrive on time and complete. This tool shows where the 14.8-point gap comes from and what it costs.
 
 **Live:** https://otif.lailarallc.com
 
@@ -8,12 +8,12 @@ Cinderhaven Provisions is a fictional ~$25M specialty food brand. The dataset is
 
 ## What it does
 
-Reconciles a brand's internal fulfillment metrics against retailer-scored OTIF (On Time In Full), decomposes the gap into root causes, and prices the exposure:
+Reconciles a brand's internal fill rate against what the retailer's dock actually received, shipment by shipment, decomposes the gap into root causes, and prices the exposure:
 
 | Metric | Value |
 |---|---|
 | Internal fill rate (portfolio) | 99.2% |
-| Walmart retailer-scored OTIF | 84.5% |
+| Walmart shipments on time and complete | 84.5% |
 | Gap | 14.8 pts |
 | Annual OTIF fines (measured) | $23,697 |
 | Annual velocity damage (modeled) | $33,500 |
@@ -21,7 +21,7 @@ Reconciles a brand's internal fulfillment metrics against retailer-scored OTIF (
 
 The hero defaults to the last-52-weeks view (~$59K exposure); the $57,197 figure is the full-corpus (2023–2025) total.
 
-The gap is almost entirely in-full (12.7 of 14.8 pts). On-time performance is strong. The blind spot is quantity shortfalls: a shipment that ships 99% of its units scores 99% on fill rate but 0% on OTIF.
+The gap is almost entirely in-full (12.7 of 14.8 pts). On-time performance is strong. The blind spot is short shipments: a shipment missing one case in a hundred scores 99% on fill rate, but it still arrives incomplete, and every missing case can come back as a chargeback.
 
 **Root causes (Walmart):**
 
@@ -40,7 +40,7 @@ The tool distinguishes two cost types:
 
 ## Why it matters
 
-Brands manage to the metric they can see — internal fill rate — while retailers fine and delist against the metric they score — OTIF. A brand can believe it is a 99% performer while its largest customer scores it in penalty territory. The fines are the visible cost; the compounding cost is shelf-velocity damage and the deauthorization conversation that follows a bad scorecard. Making the gap visible, attributable, and priced turns "Walmart says we're failing" from a dispute into a fixable operations list, ranked by dollar impact.
+Brands manage to the metric they can see — internal fill rate — while retailers fine and delist against the metric they score — OTIF. A brand can believe it is a 99% performer, and even pass Walmart's OTIF scorecard, while one Walmart shipment in six still arrives late or short. The fines are the visible cost; the compounding cost is shelf-velocity damage and the deauthorization conversation that follows a bad scorecard. Making the gap visible, attributable, and priced turns a pile of chargebacks into a fixable operations list, ranked by dollar impact.
 
 ## Run
 
