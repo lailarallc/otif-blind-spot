@@ -18,6 +18,7 @@ import psycopg2
 import psycopg2.extras
 import psycopg2.extensions
 
+import prod_guard
 from otif_config import CACHE_DIR, DATABASE_URL, WINDOW_START, WINDOW_END
 
 DEC2FLOAT = psycopg2.extensions.new_type(
@@ -30,6 +31,7 @@ psycopg2.extensions.register_type(DEC2FLOAT)
 
 def get_conn():
     # .env is loaded and DATABASE_URL resolved once at otif_config import time.
+    prod_guard.check(DATABASE_URL)
     conn = psycopg2.connect(DATABASE_URL, cursor_factory=psycopg2.extras.RealDictCursor)
     conn.cursor().execute(
         "SET search_path TO public_intermediate, public_staging, public_marts, raw, public"
