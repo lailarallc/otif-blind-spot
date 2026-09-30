@@ -6,7 +6,9 @@ Steps:
 
 Usage:
   1. flyctl proxy 5432 -a cinderhaven-db
-  2. python scripts/run_pipeline.py
+  2. ALLOW_PROD_DB=1 python scripts/run_pipeline.py
+
+  Step 00 refuses a flyctl tunnel unless ALLOW_PROD_DB=1 (scripts/prod_guard.py).
 """
 from __future__ import annotations
 
