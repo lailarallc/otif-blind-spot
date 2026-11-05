@@ -22,7 +22,7 @@ The most insidious of these is order trimming. When the warehouse is short on st
 
 That gap is the blind spot. And it's expensive:
 
-- **OTIF fines are real, but rarely the biggest number.** Walmart fines 3% of COGS on shipments that miss the threshold. Target, Kroger, and others run comparable programs. Against realistic specialty-food fill rates the measured fines run tens of thousands a year (~$24K in the worked example) — material, but smaller than the velocity and shelf-position damage they sit next to.
+- **OTIF fines are real, but rarely the biggest number.** The national mass retailer fines 3% of COGS on shipments that miss the threshold. Target, the conventional grocer, and others run comparable programs. Against realistic specialty-food fill rates the measured fines run tens of thousands a year (~$24K in the worked example) — material, but smaller than the velocity and shelf-position damage they sit next to.
 - **The scorecard affects survival, not just fines.** A poor OTIF score damages the brand's standing at category review. Buyers cut chronic OTIF offenders. The fine is the visible cost; the lost shelf position is the existential one.
 - **The brand is often fixing the wrong thing.** OTIF failures are either "on-time" failures (delivery was late) or "in-full" failures (shipped short) or both. Without decomposing them, the brand throws resources at logistics when the real problem is production short-ships — or vice versa. They're fixing blind.
 - **The rules are opaque.** Each retailer measures OTIF differently — what counts as on-time (appointment windows, MABD), what counts as in-full (line fill vs. case fill vs. unit fill), how the threshold is calculated. The brand is being graded against rules it has never read.
@@ -54,7 +54,7 @@ Three pieces, one loop, three angles. This one is the diagnostic that tells you 
 
 **It connects a compliance metric to financial outcomes.** OTIF is usually treated as an ops compliance chore. This piece ties it to dollars — fines AND velocity damage — which moves it from the ops queue to the CFO's and CEO's attention.
 
-**All-tier.** Every brand shipping to a retailer with an OTIF program faces this. The $5M brand getting its first Walmart fines and the $20M brand managing a portfolio of retailer scorecards have the same blind spot at different scale.
+**All-tier.** Every brand shipping to a retailer with an OTIF program faces this. The $5M brand getting its first national mass retailer fines and the $20M brand managing a portfolio of retailer scorecards have the same blind spot at different scale.
 
 ---
 
@@ -177,7 +177,7 @@ Cinderhaven's internal dashboards show a 99.2% fill rate. Receiving data shows o
 - **True fill against original demand is lower still:** Cinderhaven trims order lines it can't fill before acknowledging, so its high internal number is measured against a reduced base. Against the original POs, true fill is lower.
 - **Exposure:** ~$23.7K/year in measured OTIF fines, plus ~$33.5K/year in modeled velocity damage from the empty-shelf periods the in-full failures created — **~$57K/year total**.
 
-Headline: **Cinderhaven thought it was at 99%. One in six of its Walmart shipments arrived late or short, and that gap was a ~$57K/year problem hiding behind a number measured at the wrong dock.**
+Headline: **Cinderhaven thought it was at 99%. One in six of its national mass retailer shipments arrived late or short, and that gap was a ~$57K/year problem hiding behind a number measured at the wrong dock.**
 
 Runs on the existing Cinderhaven Data Platform — joins the shipment, EDI, PO and receipt marts. Consistent with the short-ship figures in The 150 Cases and the OOS events in Production Demand Forecast and Competitive Shelf Intelligence.
 

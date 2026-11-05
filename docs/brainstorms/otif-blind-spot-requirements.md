@@ -17,7 +17,7 @@ A specialty food brand's internal dashboard shows 95% fill rate. Walmart's suppl
 
 They're measured at different docks against different baselines. The brand measures fill at its own shipping dock against the orders it acknowledged — after it has already quietly trimmed lines it knew it couldn't fill. The retailer measures OTIF at its receiving dock against the original purchase orders. That divergence, compounded by order trimming, carrier timing misses, and production short-ships, produces a 9-point gap that the brand cannot explain because it has never put the two numbers side by side.
 
-The blind spot is expensive. Walmart fines 3% of COGS on affected shipments — roughly $140K/year for Cinderhaven. The shelf-velocity damage from the empty shelves those in-full failures create is larger and invisible: an estimated $320K/year. Together: ~$460K/year the brand is paying without knowing why, or even that the problem exists.
+The blind spot is expensive. The national mass retailer fines 3% of COGS on affected shipments — roughly $140K/year for Cinderhaven. The shelf-velocity damage from the empty shelves those in-full failures create is larger and invisible: an estimated $320K/year. Together: ~$460K/year the brand is paying without knowing why, or even that the problem exists.
 
 The deeper failure is misdirected remediation. Without decomposing the gap into on-time failures (logistics) and in-full failures (production), the brand throws resources at the wrong problem. The decomposition — not the headline number — is the piece's most actionable output.
 
@@ -88,7 +88,7 @@ The deeper failure is misdirected remediation. Without decomposing the gap into 
 
 **Data generation**
 
-- R8. Python generation scripts produce synthetic Walmart OTIF scorecard data seeded to the brief's target figures: 95% internal fill rate, 86% retailer-scored OTIF, a 5-point on-time / 4-point in-full gap split, ~$140K in annual OTIF fines, ~$320K in shelf-velocity damage.
+- R8. Python generation scripts produce synthetic national mass retailer OTIF scorecard data seeded to the brief's target figures: 95% internal fill rate, 86% retailer-scored OTIF, a 5-point on-time / 4-point in-full gap split, ~$140K in annual OTIF fines, ~$320K in shelf-velocity damage.
 - R9. Python generation scripts produce a synthetic 855 acknowledgment layer showing order lines the brand trimmed before acknowledging, making true fill rate computable as fill against original 850 demand vs. fill against the acknowledged 855 baseline.
 - R10. All generated data is written as static JSON files in `frontend/public/data/` and fetched by the React app at load time. No live database connection at runtime.
 

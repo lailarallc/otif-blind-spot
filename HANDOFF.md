@@ -124,7 +124,7 @@ about synthetic Walmart scorecard data remains open).
 
 ## 2026-06-23 — Pre-demo verification and exposure scope label
 
-**Started from:** Post data-platform tuning. Canonical figures: 99.2% internal / 84.5% Walmart OTIF / 14.8pt gap / $57K total exposure. Stale figures scattered across README, CLAUDE.md, PLAN.md, index.html meta tags.
+**Started from:** Post data-platform tuning. Canonical figures: 99.2% internal / 84.5% national mass retailer OTIF / 14.8pt gap / $57K total exposure. Stale figures scattered across README, CLAUDE.md, PLAN.md, index.html meta tags.
 
 **Did:**
 1. **Stale figure grep** — found old figures (92%/61%/95%/86%/$55K/$368K/$423K) in README, CLAUDE.md, PLAN.md, index.html meta tags. Data JSON files confirmed matching canonical.
