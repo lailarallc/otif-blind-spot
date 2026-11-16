@@ -27,7 +27,7 @@ function DualDockChart({ summary }: { summary: Summary }) {
   // #158f75 = --color-hk-35, #cc100a = --color-red.
   const data = [
     { label: 'Cinderhaven internal fill', value: summary.internal_fill_rate, color: '#158f75' },
-    { label: "Walmart shipments on time & complete", value: summary.retailer_otif,       color: '#cc100a' },
+    { label: "National mass retailer shipments on time & complete", value: summary.retailer_otif,       color: '#cc100a' },
   ]
 
   const renderChart = useCallback(
@@ -243,7 +243,7 @@ export function ReconciliationView({ summary, rootCauses, trueFill, exposure, ex
       <section className="recon-section" aria-labelledby="move1-title">
         <h2 className="recon-section__title" id="move1-title">Dual-Dock Reconciliation</h2>
         <p className="recon-section__framing ll-measure">
-          Cinderhaven measures fill rate at the shipping dock. This bar counts Walmart shipments that arrived on time and complete at the receiving dock.
+          Cinderhaven measures fill rate at the shipping dock. This bar counts shipments to the national mass retailer that arrived on time and complete at the receiving dock.
           The {formatPts(summary.gap_pts)} gap is real — but invisible to systems that only watch one dock.
         </p>
         <DualDockChart summary={summary} />
@@ -273,7 +273,7 @@ export function ReconciliationView({ summary, rootCauses, trueFill, exposure, ex
       <section className="recon-section" aria-labelledby="move4-title">
         <h2 className="recon-section__title" id="move4-title">True Fill Rate</h2>
         <p className="recon-section__framing ll-measure">
-          We compared what the brand shipped against what Walmart's dock received. They differ by just
+          We compared what the brand shipped against what the national mass retailer's dock received. They differ by just
           {' '}{formatPts(trueFill.trimming_gap_pts)} — almost nothing goes missing between the two docks.
           The OTIF gap is genuine short-shipping, not receiving loss.
         </p>

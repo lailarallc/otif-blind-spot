@@ -1,6 +1,6 @@
 # OTIF Blind Spot — Cinderhaven Provisions
 
-Your fill rate says 99%. Only 84% of your Walmart shipments arrive on time and complete. This tool shows where the 14.8-point gap comes from and what it costs.
+Your fill rate says 99%. Only 84% of your shipments to the national mass retailer arrive on time and complete. This tool shows where the 14.8-point gap comes from and what it costs.
 
 **Live:** https://otif.lailarallc.com
 
@@ -13,7 +13,7 @@ Reconciles a brand's internal fill rate against what the retailer's dock actuall
 | Metric | Value |
 |---|---|
 | Internal fill rate (portfolio) | 99.2% |
-| Walmart shipments on time and complete | 84.5% |
+| National mass retailer shipments on time and complete | 84.5% |
 | Gap | 14.8 pts |
 | Annual OTIF fines (measured) | $23,697 |
 | Annual velocity damage (modeled) | $33,500 |
@@ -23,7 +23,7 @@ The hero defaults to the last-52-weeks view (~$59K exposure); the $57,197 figure
 
 The gap is almost entirely in-full (12.7 of 14.8 pts). On-time performance is strong. The blind spot is short shipments: a shipment missing one case in a hundred scores 99% on fill rate, but it still arrives incomplete, and every missing case can come back as a chargeback.
 
-**Root causes (Walmart):**
+**Root causes (national mass retailer):**
 
 | Cause | Gap pts | % of Gap |
 |---|---|---|
@@ -40,7 +40,7 @@ The tool distinguishes two cost types:
 
 ## Why it matters
 
-Retailers deduct for every case that arrives late or short, whatever the brand's fill rate says. A brand can believe it is a 99% performer, and even pass Walmart's OTIF scorecard, while one Walmart shipment in six still arrives late or short. The fines are the visible cost; the compounding cost is shelf-velocity damage and the deauthorization conversation that follows a bad scorecard. Making the gap visible, attributable, and priced turns a pile of chargebacks into a fixable operations list, ranked by dollar impact.
+Retailers deduct for every case that arrives late or short, whatever the brand's fill rate says. A brand can believe it is a 99% performer, and even pass the retailer's OTIF scorecard, while one shipment in six to that retailer still arrives late or short. The fines are the visible cost; the compounding cost is shelf-velocity damage and the deauthorization conversation that follows a bad scorecard. Making the gap visible, attributable, and priced turns a pile of chargebacks into a fixable operations list, ranked by dollar impact.
 
 ## Run
 
