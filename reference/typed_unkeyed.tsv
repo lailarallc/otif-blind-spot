@@ -1,0 +1,44 @@
+# Typed figures this repo prints with no canon key (owner, 2026-11-15; plan U19, U22).
+# One row per figure per location. The platform's fleet check holds the row count to a ceiling that only
+# falls: give a figure a key (or stop printing it) and delete its row. listed=yes: the read map names it, and
+# U19 owes its key; listed=no: U22 works it down. Generated from the 2026-11-15 manifest pass.
+file_line	printed	exact_value	meaning	source	kind	listed
+README.md:18	$23,697	23696.78	annual OTIF fines measured (platform chargebacks), annual average 2023-2025	frontend/src/data/exposure.json:2 annual_fines	repo-export	yes
+README.md:19	$33,500	33499.67	annual velocity damage, modeled at $3.50/unit	frontend/src/data/exposure.json:4 annual_velocity_damage	repo-export	yes
+README.md:20	$57,197	57196.45	total annual exposure, full corpus	frontend/src/data/exposure.json:6 total_exposure	repo-export	yes
+README.md:22	~$59K		last-52-weeks exposure shown in hero by default	computed in frontend/src/computeMetrics.ts from frontend/src/data/exposure.json / frontend/src/data/summary.json; prose only here	prose-only	yes
+README.md:22	$57,197 ... (2023–2025)	57196.45	full-corpus exposure	frontend/src/data/exposure.json total_exposure	repo-export	yes
+README.md:24	12.7 of 14.8 pts	12.66	in-full share of the gap, points	frontend/src/data/summary.json:6 infull_gap_pts	repo-export	yes
+README.md:30	10.66	10.66	Short-ship gap points, Walmart	frontend/src/data/root_causes.json gap_pts	repo-export	no
+README.md:30	72.1%	72.12	Short-ship share of gap	frontend/src/data/root_causes.json pct_of_gap	repo-export	no
+README.md:31	2.12	2.12	Warehouse late gap points, Walmart	frontend/src/data/root_causes.json gap_pts	repo-export	no
+README.md:31	14.3%	14.34	Warehouse late share of gap	frontend/src/data/root_causes.json pct_of_gap	repo-export	no
+README.md:32	2.00	2.00	Receiving discrepancy gap points, Walmart	frontend/src/data/root_causes.json gap_pts	repo-export	no
+README.md:32	13.5%	13.53	Receiving discrepancy share of gap	frontend/src/data/root_causes.json pct_of_gap	repo-export	no
+README.md:34	72%	72.12	short-ship share of gap	frontend/src/data/root_causes.json pct_of_gap	repo-export	no
+README.md:34	14%	13.53	receiving discrepancy share of gap (prints 14%; data 13.53)	frontend/src/data/root_causes.json pct_of_gap	repo-export	no
+README.md:38	$23.7K/yr	23696.78	measured fines	frontend/src/data/exposure.json annual_fines	repo-export	no
+README.md:39	$33.5K/yr	33499.67	modeled velocity damage	frontend/src/data/exposure.json annual_velocity_damage	repo-export	yes
+README.md:39	$3.50 per unit	3.50	velocity damage per unit of shortfall	constant scripts/otif_config.py:57 VELOCITY_DAMAGE_PER_UNIT	assumption	no
+README.md:43	99% performer ... one Walmart shipment in six	15.55	fill rate 99%; share of Walmart shipments late or short (1 - 0.8445)	frontend/src/data/summary.json	prose-only	yes
+README.md:7	~$25M	25332687.28	company revenue scale	prose only	prose-only	no
+README.md:78	~$39.6K/yr		short_ship chargebacks per year counted in short-ship-cost	prose only (cross-repo)	prose-only	no
+frontend/index.html:21	99% fill rate ... One Walmart shipment in six	15.55	fill rate 99%; Walmart late-or-short share ~1/6 (meta description)	prose only; frontend/src/data/summary.json	prose-only	yes
+frontend/index.html:7	99% fill rate ... One Walmart shipment in six	15.55	fill rate 99%; Walmart late-or-short share ~1/6 (meta description)	prose only; frontend/src/data/summary.json	prose-only	yes
+frontend/index.html:9	99% fill rate ... One Walmart shipment in six	15.55	fill rate 99%; Walmart late-or-short share ~1/6 (meta description)	prose only; frontend/src/data/summary.json	prose-only	yes
+frontend/src/chapters/ReconciliationView/ReconciliationView.tsx:226	$3.50/unit	3.50	velocity damage rate	scripts/otif_config.py:57	assumption	no
+frontend/src/data/exposure.json:2	23696.78	23696.78	annual fines	frontend/src/data/exposure.json annual_fines; scripts/00_query_cinderhaven.py:47-121 -> scripts/cache/platform_fulfillment.json (gitignored) -> scripts/02_export_json.py	repo-export	yes
+frontend/src/data/exposure.json:4	33499.67	33499.67	annual velocity damage (modeled)	frontend/src/data/exposure.json annual_velocity_damage	repo-export	yes
+frontend/src/data/exposure.json:6	57196.45	57196.45	total exposure	frontend/src/data/exposure.json total_exposure	repo-export	yes
+frontend/src/data/summary.json:2	0.9923	0.9923	internal fill rate, full corpus (2023-01-01 to 2025-12-31)	frontend/src/data/summary.json internal_fill_rate; scripts/00_query_cinderhaven.py:47-121 -> scripts/cache/platform_fulfillment.json (gitignored) -> scripts/02_export_json.py	repo-export	yes
+frontend/src/data/summary.json:3	0.8445	0.8445	Walmart OTIF, full corpus (2023-01-01 to 2025-12-31)	frontend/src/data/summary.json retailer_otif; scripts/00_query_cinderhaven.py:47-121 -> scripts/cache/platform_fulfillment.json (gitignored) -> scripts/02_export_json.py	repo-export	yes
+frontend/src/data/summary.json:5	2.12	2.12	on-time gap points (2023-01-01 to 2025-12-31)	frontend/src/data/summary.json ontime_gap_pts; scripts/00_query_cinderhaven.py:47-121 -> scripts/cache/platform_fulfillment.json (gitignored) -> scripts/02_export_json.py	repo-export	no
+frontend/src/data/summary.json:6	12.66	12.66	in-full gap points (2023-01-01 to 2025-12-31)	frontend/src/data/summary.json infull_gap_pts; scripts/00_query_cinderhaven.py:47-121 -> scripts/cache/platform_fulfillment.json (gitignored) -> scripts/02_export_json.py	repo-export	no
+frontend/src/data/summary.json:7	46760	46760	retailer shipments, all (2023-01-01 to 2025-12-31)	frontend/src/data/summary.json total_shipments; scripts/00_query_cinderhaven.py:47-121 -> scripts/cache/platform_fulfillment.json (gitignored) -> scripts/02_export_json.py	repo-export	no
+frontend/src/data/summary.json:8	10124	10124	Walmart shipments (2023-01-01 to 2025-12-31)	frontend/src/data/summary.json walmart_shipments; scripts/00_query_cinderhaven.py:47-121 -> scripts/cache/platform_fulfillment.json (gitignored) -> scripts/02_export_json.py	repo-export	no
+frontend/src/data/true_fill.json:2	0.9906 / 0.9898 / 249 / 0.0246	0.9906	fill vs 855, fill vs 850, trimmed orders, pct trimmed	frontend/src/data/true_fill.json; scripts/00_query_cinderhaven.py:47-121 -> scripts/cache/platform_fulfillment.json (gitignored) -> scripts/02_export_json.py	repo-export	no
+tests/test_demo_golden.py:46	0.9923	0.9923	internal fill rate	asserted against frontend/src/data/summary.json / frontend/src/data/exposure.json	repo-export	yes
+tests/test_demo_golden.py:47	0.8445	0.8445	Walmart OTIF	asserted against frontend/src/data/summary.json / frontend/src/data/exposure.json	repo-export	yes
+tests/test_demo_golden.py:57	57196.45	57196.45	total exposure	asserted against frontend/src/data/summary.json / frontend/src/data/exposure.json	repo-export	yes
+tests/test_demo_golden.py:58	23696.78	23696.78	annual fines	asserted against frontend/src/data/summary.json / frontend/src/data/exposure.json	repo-export	yes
+tests/test_demo_golden.py:59	33499.67	33499.67	annual velocity damage	asserted against frontend/src/data/summary.json / frontend/src/data/exposure.json	repo-export	yes
